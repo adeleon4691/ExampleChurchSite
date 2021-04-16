@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Church Site</title>
+        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="mustache.js"></script>
+        <script type="text/javascript" src="churchsite.js"></script>
+        <link href="churchstyle.css" rel="stylesheet"/>
+    </head>
+    
+    <header>Flint Hill Community Baptist Church<img src="churchimages/churchlogo.png" class= "church-logo" alt="church logo"/></header>
+<!--Top navigation bar-->
+    <div class="top-bar">
+        <a href="churchwelcome.html">Home</a>
+        <a href="churchabout.html">About Us</a>
+        <a class="active" href="churchactivities.html">Activities</a>
+        <a href="churchcontact.html">Contact Us</a>
+    </div>
+
+    <body>
+        <main>
+            <h1 class="home-image"></h1>
+            <h1 id="activities">Activities</h1>
+
+        <!--Use of mustache.js to render the list of the church activities as well as the ages for the groups-->
+           <div class="main-content">
+            <script id="template" type="x-tmple-mustache">
+                <ul>{{#activities}}
+                    <li>{{age}}</li>
+                    <li><img src="{{img}}"/></li>
+                    {{/activities}}
+                </ul>
+                </script>
+            <div id="clubs">
+
+            </div>
+        </div>
+        </main>
+        
+    </body>
+    <footer>
+        <p>1 Flint Hill Ct.<br>
+            Powhatan, VA 23139</p>
+    </footer>

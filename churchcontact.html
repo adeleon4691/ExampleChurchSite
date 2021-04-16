@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Church Site</title>
+        <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="mustache.js"></script>
+        <script type="text/javascript" src="churchsite.js"></script>
+        <link href="churchstyle.css" rel="stylesheet"/>
+    </head>
+    
+    <header>Flint Hill Community Baptist Church<img src="churchimages/churchlogo.png" class= "church-logo" alt="church logo"/></header>
+    <!--Top navigation bar-->
+
+    <div class="top-bar">
+        <a href="churchwelcome.html">Home</a>
+        <a href="churchabout.html">About Us</a>
+        <a href="churchactivities.html">Activities</a>
+        <a class="active" href="churchcontact.html">Contact Us</a>
+    </div>
+
+    <body>
+        <main>
+            <h1 class="home-image"></h1>
+
+            <h1 id="contact-form">Contact Us!</h1>
+            <script src="churchsite.js"></script>
+                <form name="contactus">
+                    <label>
+                        Name:
+                        <input type="text" name="name" size="30" maxlength="100" required>
+                    </label>
+                    <label>
+                        Email:
+                        <input type="text" name="email" size="30" maxlength="100" required>
+                    </label>
+                    <label>
+                        Phone:
+                        <input type="text" name="phone" size="20" maxlenght="12" required>
+                    </label>
+                    <label for="help">
+                        How can we help?
+                    </label>
+                    <select name="helpers" id="help">
+                        <option></option>
+                        <option>Meet with Pastor</option>
+                        <option>More Info for Activities</option>
+                        <option>Like to Give a Tithe</option>
+                        <option>Prayer Request</option>
+                        <option>Volunteer</option>
+                    </select>
+                    <label>
+                        Good Time to Contact
+                    </label>
+                    <label>
+                        <input type="radio" name="time" value="am"/>
+                        AM
+                    </label>
+                    <label>
+                        <input type="radio" name="time" value="pm"/>
+                        PM
+                     </label>
+                     <label for="comments">Additional Comments</label>
+                     <textarea name="comments" rows="8" col="45"></textarea>
+                     <br>
+
+                     <input type="submit" value="Submit" id="submitbutton"/>
+                </form>
+                <br>
+                <br>
+        </main>
+    </body>
+    <footer>
+        <p>1 Flint Hill Ct.<br>
+            Powhatan, VA 23139</p>
+    </footer>

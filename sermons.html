@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Church Site</title>
+        <link href="churchstyle.css" rel="stylesheet"/>
+        
+    </head>
+    
+    <header>Flint Hill Community Baptist Church<img src="churchimages/churchlogo.png" class="church-logo" alt="church logo" role=img></header>
+
+    <div class="top-bar">
+        <a href="churchwelcome.html" role=link>Home</a>
+        <a class="active" href="churchabout.html" role=link>About Us</a>
+        <a href="churchactivities.html" role=link>Activities</a>
+        <a href="churchcontact.html" role=link>Contact Us</a>
+    </div>
+
+    <body onload="myAlert()">
+        <main>
+            <h1 class="home-image" role=img></h1>
+
+            <div id="sermons">
+                <h1>Sermons</h1>
+                <a href="churchabout.html">Go Back</a>
+                <!--Alert will pop up after the page has loaded-->
+                <!--Alert lets the user know that the page is currently under construction-->
+                <script type="text/javascript">
+                    function myAlert(){
+                        alert("Currently under construction! Come back later!");
+                    }     
+                </script>
+            </div>
+        </main>
+    </body>
+</html>
